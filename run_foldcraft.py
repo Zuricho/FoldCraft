@@ -18,11 +18,11 @@ import jax.numpy as jnp
 import numpy as np
 
 # Package in this project
-from foldcraft.common import protein
-from foldcraft.common import residue_constants
-from foldcraft.model import config
-from foldcraft.model import data
-from foldcraft.model import model
+from foldcraft.alphafold.common import protein
+from foldcraft.alphafold.common import residue_constants
+from foldcraft.alphafold.model import config
+from foldcraft.alphafold.model import data
+from foldcraft.alphafold.model import model
 
 
 
