@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Mapping, Optional, Tuple
 # from Bio.PDB import MMCIFParser
 # from Bio.PDB import PDBParser
 # from Bio.PDB.mmcifio import MMCIFIO
-# from Bio.PDB.Structure import Structure
+from Bio.PDB.Structure import Structure
 import numpy as np
 
 from foldcraft.zurtein import mmcif_metadata
@@ -187,19 +187,19 @@ def from_pdb_string(pdb_str: str, chain_id: Optional[str] = None) -> Protein:
 def from_mmcif_string(
     mmcif_str: str, chain_id: Optional[str] = None
 ) -> Protein:
-  """Takes a mmCIF string and constructs a `Protein` object.
+    """Takes a mmCIF string and constructs a `Protein` object.
 
-  WARNING: All non-standard residue types will be converted into UNK. All
-    non-standard atoms will be ignored.
+    WARNING: All non-standard residue types will be converted into UNK. All
+      non-standard atoms will be ignored.
 
-  Args:
-    mmcif_str: The contents of the mmCIF file
-    chain_id: If chain_id is specified (e.g. A), then only that chain is parsed.
-      Otherwise all chains are parsed.
+    Args:
+      mmcif_str: The contents of the mmCIF file
+      chain_id: If chain_id is specified (e.g. A), then only that chain is parsed.
+        Otherwise all chains are parsed.
 
-  Returns:
-    A new `Protein` parsed from the mmCIF contents.
-  """
+    Returns:
+      A new `Protein` parsed from the mmCIF contents.
+    """
     with io.StringIO(mmcif_str) as mmcif_fh:
         parser = MMCIFParser(QUIET=True)
         structure = parser.get_structure(structure_id='none', filename=mmcif_fh)
