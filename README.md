@@ -32,4 +32,12 @@ conda install biopython -c conda-forge
 - [?]immutabledict
 
 
+## Run
+
+Create empty MSA feature (input feature of alphafold)
+```
+python parafold/create_empty_feature.py \
+--fasta_paths input/test.fasta \
+--output_dir output
+```
 
