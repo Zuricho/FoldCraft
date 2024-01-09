@@ -18,11 +18,11 @@ import jax.numpy as jnp
 import numpy as np
 
 # Package in this project
-from alphafold.common import protein
-from alphafold.common import residue_constants
-from alphafold.model import config
-from alphafold.model import data
-from alphafold.model import model
+from foldcraft.common import protein
+from foldcraft.common import residue_constants
+from foldcraft.model import config
+from foldcraft.model import data
+from foldcraft.model import model
 
 
 
@@ -36,10 +36,6 @@ def _jnp_to_np(output: Dict[str, Any]) -> Dict[str, Any]:
     return output
 
 
-
-def predict_structure():
-    """Predicts structure using AlphaFold for the given sequence."""
-    pass
 
 
 def main():
