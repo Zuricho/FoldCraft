@@ -34,7 +34,7 @@ the network to facilitate easier conversion to existing protein datastructures.
 """
 
 from typing import Dict, Optional
-from foldcraft.alphafold.common import residue_constants
+from foldcraft.zurtein import residue_constants
 
 from foldcraft.alphafold.model import r3
 from foldcraft.alphafold.model import utils

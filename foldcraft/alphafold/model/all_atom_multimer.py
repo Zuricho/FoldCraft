@@ -15,7 +15,7 @@
 
 from typing import Dict, Text
 
-from foldcraft.alphafold.common import residue_constants
+from foldcraft.zurtein import residue_constants
 from foldcraft.alphafold.model import geometry
 from foldcraft.alphafold.model import utils
 import jax

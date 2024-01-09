@@ -23,7 +23,7 @@ Lower-level modules up to EvoformerIteration are reused from modules.py.
 import functools
 from typing import Sequence
 
-from foldcraft.alphafold.common import residue_constants
+from foldcraft.zurtein import residue_constants
 from foldcraft.alphafold.model import all_atom_multimer
 from foldcraft.alphafold.model import common_modules
 from foldcraft.alphafold.model import folding_multimer

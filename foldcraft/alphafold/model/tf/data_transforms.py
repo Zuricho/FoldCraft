@@ -14,7 +14,7 @@
 
 """Data for AlphaFold."""
 
-from foldcraft.alphafold.common import residue_constants
+from foldcraft.zurtein import residue_constants
 from foldcraft.alphafold.model.tf import shape_helpers
 from foldcraft.alphafold.model.tf import shape_placeholders
 from foldcraft.alphafold.model.tf import utils

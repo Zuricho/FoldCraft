@@ -16,7 +16,7 @@
 
 import functools
 from typing import Dict
-from foldcraft.alphafold.common import residue_constants
+from foldcraft.zurtein import residue_constants
 from foldcraft.alphafold.model import all_atom
 from foldcraft.alphafold.model import common_modules
 from foldcraft.alphafold.model import prng
