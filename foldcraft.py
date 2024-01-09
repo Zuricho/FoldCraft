@@ -68,21 +68,7 @@ def main():
 
 
     random_seed = 1
-    # logging.info('Using random seed %d for the data pipeline', random_seed)
-
-    # Predict structure for each of the sequences.
-    # predict_structure(
-    #         fasta_path=fasta_path,
-    #         fasta_name=fasta_name,
-    #         output_dir_base=FLAGS.output_dir,
-    #         data_pipeline=data_pipeline,
-    #         model_runners=model_runners,
-    #         amber_relaxer=amber_relaxer,
-    #         benchmark=FLAGS.benchmark,
-    #         random_seed=random_seed,
-    #         models_to_relax=FLAGS.models_to_relax,
-    #         run_feature = FLAGS.run_feature)
-    # logging.info('%s AlphaFold structure prediction COMPLETE', fasta_name)
+    logging.info('Using random seed %d for the data pipeline', random_seed)
 
 
     # predict_structure function
