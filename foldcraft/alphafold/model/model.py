@@ -16,7 +16,7 @@
 from typing import Any, Mapping, Optional, Union
 
 from absl import logging
-from foldcraft.alphafold.common import confidence
+from foldcraft.alphafold.model import confidence
 from foldcraft.alphafold.model import features
 from foldcraft.alphafold.model import modules
 from foldcraft.alphafold.model import modules_multimer
