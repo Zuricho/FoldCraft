@@ -10,13 +10,13 @@
 
 module purge
 module load miniconda3
-source activate parafold
+source activate foldcraft
 
 
 # create empty feature
 python parafold/create_empty_feature.py \
-input/mono_set1/GA98.fasta \
-output
+--fasta_paths input/test.fasta \
+--output_dir output
 
 # run alphafold
 ./run_alphafold.sh \
@@ -24,8 +24,7 @@ output
 -o output \
 -p monomer_ptm \
 -u 0 \
--i \
-input/mono_set1/GA98.fasta \
+-i input/test.fasta \
 -t 2020-01-01 \
 -r none \
 -s     # skip msa

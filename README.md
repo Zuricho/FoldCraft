@@ -1,6 +1,8 @@
 # FoldCraft
 
-Inplementation of AlphaFold in independent modules
+Note: this project is **WORK IN PROGRESS**.
+
+Implementation of AlphaFold in independent modules. AlphaFold became a sandbox in FoldCraft, and you can play with it as you wish.
 
 ## Installation
 Using conda
@@ -11,6 +13,7 @@ pip install ml-collections==0.1.1
 conda install numpy jax absl-py
 conda install dm-haiku dm-tree -c conda-forge
 conda install tensorflow-cpu -c conda-forge
+conda install biopython -c conda-forge
 ```
 
 
@@ -22,6 +25,7 @@ conda install tensorflow-cpu -c conda-forge
 - dm-haiku
 - dm-tree
 - numpy
+- biopython=1.82
 - tensorflow=2.15.0    # required in alphafold.model.features
 - [?]pandas   
 - [?]scipy
