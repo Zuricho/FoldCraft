@@ -1,6 +1,7 @@
 # create_empty_feature.py can create create empty feature.pkl file for parafold, make the parafold skip the MSA and template part
 import numpy as np
 import pickle
+# from foldcraft.zurtein import residue_constants
 import residue_constants
 import os
 import pathlib
