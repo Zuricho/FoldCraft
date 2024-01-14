@@ -39,6 +39,9 @@ def _jnp_to_np(output: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def main():
+    # set for logging
+    logging.set_verbosity(logging.INFO)
+
     model_runners = {}
     model_names = (
         'model_1',
