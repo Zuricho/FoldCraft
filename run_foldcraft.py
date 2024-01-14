@@ -58,7 +58,7 @@ def main():
         model_config.data.common.num_recycle = 3  # FLAGS.recycling
         
         model_params = data.get_model_haiku_params(
-                model_name=model_name, parameter_path="data/params")   # FLAGS.parameter_path
+                model_name=model_name, parameter_path="/Volumes/Pacifica/Storage/alphafold_params/AF_2_3_params")   # FLAGS.parameter_path
         model_runner = model.RunModel(model_config, model_params)
 
         num_predictions_per_model = 1

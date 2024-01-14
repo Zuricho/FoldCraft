@@ -40,8 +40,19 @@ Or you can just:
 conda env create -f environment/environment_gpu.yml
 ```
 
-### Apple silicon installation (CPU)
-(Not ready for now)
+### Apple silicon installation (GPU? No, it's still CPU)
+
+Apple GPU might be supported in the future. (wait for jax-metal updates)
+
+```bash
+conda create -n foldcraft python=3.10
+conda install jax absl-py ipykernel dm-haiku dm-tree biopython -c conda-forge
+conda install tensorflow-cpu -c conda-forge
+# pip install ml-collections==0.1.1
+conda install ml-collections -c conda-forge
+# pip install jax-metal
+```
+
 ```bash
 conda env create -f environment/environment_m1.yml
 ```
@@ -59,7 +70,6 @@ conda env create -f environment/environment_m1.yml
 - biopython=1.82
 - tensorflow=2.15.0    # required in alphafold.model.features
 - [?]pandas   
-- [?]scipy
 - [?]immutabledict
 
 
@@ -75,6 +85,11 @@ python foldcraft/parafold/create_empty_feature.py --fasta_paths input/test.fasta
 python run_foldcraft.py
 ```
 
+
+
+## Reference
+
+- Jax installation: [link](https://jax.readthedocs.io/en/latest/installation.html)
 
 
 
