@@ -45,13 +45,16 @@ conda env create -f environment/environment_gpu.yml
 Apple GPU might be supported in the future. (wait for jax-metal updates)
 
 ```bash
-conda create -n foldcraft python=3.10
-conda install jax absl-py ipykernel dm-haiku dm-tree biopython -c conda-forge
-conda install tensorflow-cpu -c conda-forge
-# pip install ml-collections==0.1.1
+conda install ipykernel matplotlib
+conda install jax absl-py -c conda-forge
+conda install dm-haiku dm-tree -c conda-forge
+conda install biopython -c conda-forge
 conda install ml-collections -c conda-forge
+conda install tensorflow-cpu -c conda-forge
 # pip install jax-metal
 ```
+
+In this environment, `dm-haiku` and `tensorflow-cpu` can bring in a lot of conflicts
 
 ```bash
 conda env create -f environment/environment_m1.yml
